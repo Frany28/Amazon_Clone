@@ -102,12 +102,6 @@
   cursor: pointer;
 }
 
-.secondary-navbar {
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-  overflow: hidden; /* Oculta el desbordamiento del contenido */
-  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se desborda */
-}
-
 .secondary-navbar img {
   width: 15px;
 }
@@ -138,8 +132,11 @@
 
 .secondary-navbar {
   background-color: #232f3e;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 14px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el desbordamiento del contenido */
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se desborda */
 }
 
 .secondary-navbar ul {
