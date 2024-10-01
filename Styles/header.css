@@ -1,0 +1,68 @@
+:root {
+  --color-principal: #ffffff;
+  --color-base: #131921;
+  --color-secundario: #f3f3f3;
+  --color-terciario: #b9b9b9;
+  --texto-color: #333;
+}
+
+header {
+  width: 100%;
+  background-image: url("https://m.media-amazon.com/images/I/61L-w+GvxUL._SX3000_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 90px; /* Espacio en la parte inferior del header */
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo de las categorías */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  padding-top: 120px;
+}
+
+.category {
+  background-color: var(--color-secundario);
+  border: 1px solid var(--color-base);
+  transition: transform 0.3s;
+  padding: 5px;
+}
+
+.category h3 {
+  text-align: center;
+  color: var(--texto-color);
+  padding: 10px 10px;
+  margin: 0 0 10px;
+}
+
+.category div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.category div > div {
+  text-align: center;
+  flex: 1 1 45%;
+}
+
+.category img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 4px;
+}
+
+.category:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}

@@ -1,0 +1,202 @@
+:root {
+  --color-principal: #ffffff;
+  --color-base: #131921;
+  --texto-parrafo: 14px;
+}
+
+.nav {
+  background-color: var(--color-base);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--color-principal);
+}
+
+/* Contenedor principal */
+#nav-main {
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+/* Estilos para la parte izquierda de la navegación */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#nav-logo img {
+  height: 20px;
+}
+
+#sent-to {
+  font-size: 12px;
+}
+
+#sent-to h1 {
+  display: flex;
+  align-items: center;
+  font-size: var(--texto-parrafo);
+}
+
+#sent-to img {
+  margin-right: 5px;
+  width: 15px;
+}
+
+/* Estilos para el centro de la navegación */
+.nav-center {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ocultar el campo de búsqueda por defecto */
+#nav-search {
+  display: none;
+}
+
+#nav-search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+#search-button {
+  background-color: #febd69;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+
+#search-button img {
+  height: 20px;
+}
+
+/* Estilos para la parte derecha de la navegación */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav-language {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#nav-language img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.cart img {
+  height: 30px;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.secondary-navbar {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el desbordamiento del contenido */
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se desborda */
+}
+
+.secondary-navbar img {
+  width: 15px;
+}
+
+/* Cambiar el borde a blanco al pasar el cursor sobre los enlaces */
+.secondary-navbar a:hover {
+  border-color: white;
+}
+
+/* Estilos para el logo, el texto "Enviar a", el idioma y el carrito */
+#nav-logo:hover,
+#sent-to:hover,
+#nav-language:hover,
+.cart:hover,
+.secondary-navbar a:hover {
+  border: 2px solid white;
+  transition: border-color 0.3s ease-in-out;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* Para asegurarte de que los elementos tengan espacio para el borde */
+#nav-logo,
+#sent-to,
+#nav-language,
+.cart {
+  position: relative;
+}
+
+/* Responsividad */
+
+/* Para pantallas más grandes, mostrar el campo de búsqueda */
+@media (min-width: 481px) {
+  #nav-search {
+    display: flex;
+    width: 60%;
+  }
+}
+
+/* Ajustar el tamaño de íconos en pantallas pequeñas */
+@media (max-width: 480px) {
+  /* Ajustar el tamaño de los iconos en pantallas muy pequeñas */
+  #nav-logo img,
+  #nav-language img,
+  .cart img {
+    height: 20px; /* Reducción del tamaño del logo e íconos */
+  }
+
+  .nav-right {
+    gap: 10px; /* Reducir el espacio entre los íconos */
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-main {
+    flex-wrap: nowrap; /* Mantiene los elementos en una fila en pantallas pequeñas */
+    justify-content: space-between;
+  }
+
+  .nav-center {
+    width: 100%;
+  }
+
+  /* Ajustar tamaño de íconos en pantallas medianas */
+  #nav-logo img,
+  #nav-language img,
+  .cart img {
+    height: 25px;
+  }
+}
+
+.secondary-navbar {
+  background-color: #232f3e;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.secondary-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.secondary-navbar li {
+  display: inline;
+}
+
+.secondary-navbar a {
+  color: var(--color-principal);
+  text-decoration: none;
+}

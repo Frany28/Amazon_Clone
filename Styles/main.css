@@ -1,0 +1,41 @@
+:root {
+  --color-principal: #ffffff;
+  --color-base: #131921;
+  --color-secundario: #f3f3f3;
+  --texto-color: #333;
+  --color-terciario: #b9b9b9;
+}
+
+main {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.list {
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--color-principal);
+  margin-bottom: 30px; /* Agrega separación entre contenedores */
+}
+
+.title {
+  padding: 20px 10px;
+}
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Mantiene la separación entre los ítems */
+}
+
+.list-items img {
+  width: 100%; /* Ajusta al ancho del contenedor */
+  height: 200px; /* Fija la altura */
+  object-fit: cover; /* Asegura que las imágenes mantengan su proporción y se recorten si es necesario */
+  border-radius: 4px;
+}
+
+.list-items li {
+  list-style: none;
+}
