@@ -12,7 +12,7 @@
 
 /* Contenedor principal */
 #nav-main {
-  padding: 8px 15px;
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 #nav-logo img {
-  height: 20px;
+  max-height: 30px;
 }
 
 #sent-to {
@@ -125,7 +125,6 @@
 .secondary-navbar a:hover {
   border: 2px solid white;
   transition: border-color 0.3s ease-in-out;
-  padding: 4px;
   cursor: pointer;
 }
 
@@ -137,7 +136,29 @@
   position: relative;
 }
 
-/* Responsividad */
+.secondary-navbar {
+  background-color: #232f3e;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.secondary-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.secondary-navbar li {
+  display: inline;
+}
+
+.secondary-navbar a {
+  color: var(--color-principal);
+  text-decoration: none;
+}
+
+/* Responsive */
 
 /* Para pantallas más grandes, mostrar el campo de búsqueda */
 @media (min-width: 481px) {
@@ -177,26 +198,4 @@
   .cart img {
     height: 25px;
   }
-}
-
-.secondary-navbar {
-  background-color: #232f3e;
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-.secondary-navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.secondary-navbar li {
-  display: inline;
-}
-
-.secondary-navbar a {
-  color: var(--color-principal);
-  text-decoration: none;
 }

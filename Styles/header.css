@@ -2,7 +2,6 @@
   --color-principal: #ffffff;
   --color-base: #131921;
   --color-secundario: #f3f3f3;
-  --color-terciario: #b9b9b9;
   --texto-color: #333;
 }
 
@@ -14,6 +13,7 @@ header {
   background-attachment: fixed;
   background-position: center;
   padding-bottom: 90px; /* Espacio en la parte inferior del header */
+  background-color: #b9b9b9;
 }
 
 /* Estilos generales */
